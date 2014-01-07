@@ -1,0 +1,9 @@
+#subscription
+  %h1 Your Subscription
+  %p
+    You have signed up for the
+    %strong= @subscription.plan.name
+    plan which includes
+    for just
+    %strong= number_to_currency @subscription.plan.price
+    per month!
